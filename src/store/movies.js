@@ -32,18 +32,16 @@ export const loadMovie = (id) => async dispatch => {
 const initialState = { movie: null, movies: null }
 
 const moviesReducer = (state = initialState, action) => {
-  let newState;
+  const newState = Object.assign({}, state)
   switch (action.type) {
     case LOAD_ONE:
-      newState = Object.assign({}, state);
-      newState.movie = action.movie
+      newState.movie = action.movie;
       return newState
     case LOAD_ALL:
-      newState = Object.assign({}, state);
       newState.movies = action.movies
       return newState
     default:
-      return state;
+      return state
   }
 }
 

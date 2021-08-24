@@ -78,7 +78,7 @@
 
     How did you approach this challenge?
 
-    I approached the challenge with excitement. I knew I would want to add a Redux store as my first enhancement, and I knew I wanted to moderately style the pages.
+    I approached the challenge with excitement. I knew I would want to add a Redux store as my first enhancement, and I knew I also wanted to moderately style the pages.
 
     What did you find challenging?
 

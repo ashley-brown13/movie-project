@@ -99,6 +99,8 @@
   font-size: 25px;
   margin-bottom: 10px;
   padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .movies-ind-movie-title {

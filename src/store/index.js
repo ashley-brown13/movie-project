@@ -6,7 +6,7 @@ const rootReducer = combineReducers({
   movies: moviesReducer
 });
 
-let enhancer = applyMiddleware(thunk)
+const enhancer = applyMiddleware(thunk)
 
 const configureStore = (preloadedState) => {
   return createStore(rootReducer, preloadedState, enhancer);
