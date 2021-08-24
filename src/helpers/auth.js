@@ -7,3 +7,7 @@ export const signup = (email, password) => {
 export const signin = (email, password) => {
   return auth().signInWithEmailAndPassword(email, password);
 }
+
+export const signout = () => {
+  return auth().signOut()
+}

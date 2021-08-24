@@ -78,7 +78,7 @@
 
     How did you approach this challenge?
 
-    I approached the challenge with excitement. I knew I would want to add a Redux store as my first enhancement, and I knew I also wanted to moderately style the pages.
+    I approached the challenge with excitement. I knew I would want to add a Redux store as my first enhancement, and I knew I also wanted to moderately style the pages. Honestly, I saw this as a chance
 
     What did you find challenging?
 
@@ -88,8 +88,13 @@
 
     Why did you do what you did?
     What did you learn or found interesting?
+
+    I learned what it is like to work within the established code. This is familiar to me through App Academy projects, but those involve a lot more direct instruction on how to change code. With this, I felt very much like I was searching through and deciding the best way to place my code in.
+
     Did you find a bug? How did you fix it?
 
-    The images were not showing up. For some reason the links are not working properly. I figured out that if you go to the link and select the "zoomed" version of the image, that URL will work, so I created an object that stores the working URLs according to their movie ID.
+    The images were not showing up. For some reason the links are not working properly. I figured out that if you go to the link and select the "zoomed" version of the image, that URL will work, so I created an object that stores the working URLs according to their movie ID. This way, I could have the image properly render on the page.
 
     At the end of the challenge, would you have done something different, if you could do it over?
+
+    If I could do it over, I would want more time to incorporate the tests. I have not previoulsy worked with Jest before, so it would have been a longer task to take on, but if I could go back, I would definitely write tests for the helpers/components.

@@ -80,7 +80,6 @@
 
 .movies-page {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
@@ -92,6 +91,7 @@
 #movies-page-title {
   font-family: 'Bungee Shade', cursive;
   font-size: 80px;
+  margin-top: 20px;
 }
 
 .movies-list-ind-movie {
@@ -120,13 +120,19 @@ button:hover{
   padding: 30px;
 }
 
+#total-movie-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
 #movie-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Lilita One', cursive;
   background-color: white;
-  padding: 40px;
+  padding: 10px 40px 40px 40px;
   border-radius: 5px;
 }
 
@@ -161,12 +167,37 @@ button:hover{
   display: flex;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E2BE1D;
+  width: 100vw;
+  color: black;
+}
+
+#header-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.email-and-logout {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+}
+
 body {
   background-color: #FAFAFA;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 button {
@@ -178,4 +209,8 @@ button {
   height: 40px;
   border: 1px solid black;
   border-radius: 3px;
+}
+
+#logout-button {
+  background-color: #C82B0F
 }

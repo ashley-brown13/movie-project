@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { loadMovies } from '../store/movies'
+import { loadMovies } from '../store/movies';
+import Header from '../components/header';
 
 const Movies = () => {
   const dispatch = useDispatch()
@@ -12,6 +13,7 @@ const Movies = () => {
 
   return (
     <div className="movies-page">
+      <Header />
       <h1 id="movies-page-title">Movies</h1>
       <div id="movies-list">
         {movies && movies.map((movie) => (
