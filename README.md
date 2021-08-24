@@ -76,7 +76,7 @@
 
     Use this space to document your thought process. Reserve for this part at least 30 mins!
 
-    How did you approach this challenge?
+    <b>How did you approach this challenge?<b>
 
     I approached the challenge with excitement. I knew I would want to add a Redux store as my first enhancement, and I knew I also wanted to moderately style the pages. Honestly, I saw this as a chance
 
