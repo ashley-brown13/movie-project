@@ -86,7 +86,7 @@
 
 ### Did you get stuck?
 
-#### Not for long. The below image issue confused me for a moment until I found the solution.
+#### Not for long. The image issue I describe in the bug question below confused me for a moment until I found the solution.
 
 ### Why did you do what you did?
 
