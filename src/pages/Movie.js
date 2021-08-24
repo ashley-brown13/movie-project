@@ -23,7 +23,7 @@ const Movie = () => {
 
   useEffect(() => {
     dispatch(loadMovie(movieId));
-  }, []);
+  }, [movieId]);
 
   const handleGoBackClick = () => {
     history.push("/movies");
@@ -34,7 +34,7 @@ const Movie = () => {
       {movie &&
         <div className="movie-container" key={movie.id}>
             <h1 className="ind-movie-title">{movie.title}</h1>
-            <img src={pictures[movie.id]}></img>
+            <img src={pictures[movie.id]} alt={`${movie.title} Cover`}></img>
             <p>Release Date: {movie.release}</p>
             <ul className="movie-songs">Songs:
               {movie.song_examples.map((song) => (

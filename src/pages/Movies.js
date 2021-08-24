@@ -13,7 +13,7 @@ const Movies = () => {
   return (
     <div className="movies-page">
       <h1 id="movies-page-title">Movies</h1>
-      <div className="movies-list">
+      <div id="movies-list">
         {movies && movies.map((movie) => (
           <div className="movies-list-ind-movie" key={movie.id}>
             <a href={`/movies/${movie.id}`} className="ind-movie-title">
