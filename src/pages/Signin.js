@@ -25,24 +25,24 @@ const SignIn = () => {
   };
 
   return (
-    <div>
+    <div id="login-page">
       <form
         autoComplete="off"
         onSubmit={handleSubmit}
+        id="login-form"
       >
-        <h1>
-          Login to
-          <Link to="/">
-            Emme Jr Challenge
-          </Link>
+        <Link id="login-page-title-link" className="auth-page-link" to="/">The Movie Depot</Link>
+        <h1 className="auth-page-title">
+          Login
         </h1>
-        <p>
-          Fill in the form below to login to your account.
+        <p className="auth-directions">
+          Fill in the form below to login.
         </p>
         <div>
           <input
             placeholder="Email"
             name={constants.auth.email}
+            className="auth-page-input"
             type="email"
             onChange={handleChange}
             value={email}
@@ -52,6 +52,7 @@ const SignIn = () => {
           <input
             placeholder="Password"
             name={constants.auth.password}
+            className="auth-page-input"
             onChange={handleChange}
             value={password}
             type="password"
@@ -65,7 +66,7 @@ const SignIn = () => {
         </div>
         <hr/>
         <p>
-          Don't have an account? <Link to={constants.routes.signup}>Sign up</Link>
+          Don't have an account? <Link className="auth-page-link" to={constants.routes.signup}>Sign up</Link>
         </p>
       </form>
     </div>

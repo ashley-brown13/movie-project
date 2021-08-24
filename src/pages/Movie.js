@@ -30,18 +30,24 @@ const Movie = () => {
   }
 
   return (
-    <div className="movie-page">
+    <div id="movie-page">
       {movie &&
-        <div className="movie-container" key={movie.id}>
+        <div id="movie-container" key={movie.id}>
             <h1 className="ind-movie-title">{movie.title}</h1>
-            <img src={pictures[movie.id]} alt={`${movie.title} Cover`}></img>
-            <p>Release Date: {movie.release}</p>
-            <ul className="movie-songs">Songs:
-              {movie.song_examples.map((song) => (
-                <li key={song}>{song}</li>
-              ))}
-            </ul>
-            <button onClick={handleGoBackClick}>Go Back</button>
+            <div className="side-by-side">
+              <img src={pictures[movie.id]} alt={`${movie.title} Cover`}></img>
+              <div className="movie-info">
+                <p id="release-date"><st>Release Date:</st> {movie.release}</p>
+                <div className="movie-songs">
+                  <h3 id="movie-songs-title">Songs:</h3>
+                  {movie.song_examples.map((song) => (
+                    <p key={song}>{song}</p>
+                  ))}
+                </div>
+                <button onClick={handleGoBackClick}>Go Back</button>
+              </div>
+
+            </div>
         </div>
       }
     </div>

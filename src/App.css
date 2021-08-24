@@ -16,6 +16,7 @@
 
 #clapper {
   max-width: 700px;
+  border-radius: 2px;
 }
 
 #homepage-buttons {
@@ -31,6 +32,51 @@
   margin: 30px;
 }
 
+#signup-page,
+#login-page {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lilita One', cursive;
+}
+
+#signup-form,
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7em;
+  background-color: white;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 2px;
+  padding: 30px;
+}
+
+.auth-page-title {
+  font-size: 40px;
+}
+
+#signup-page-title-link,
+#login-page-title-link {
+  font-size: 50px;
+}
+
+.auth-page-link {
+  color: #0DAD8A;
+}
+
+.auth-directions {
+  font-size: 20px;
+}
+
+.auth-page-input {
+  width: 240px;
+  height: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+  border: 2px solid black;
+}
 
 .movies-page {
   display: flex;
@@ -48,16 +94,86 @@
   font-size: 80px;
 }
 
-.ind-movie-title {
+.movies-list-ind-movie {
   font-family: 'Lilita One', cursive;
   font-size: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.movies-ind-movie-title {
   color: black;
 }
 
-.movies-list-ind-movie {
-  margin-bottom: 10px;
+.movies-list-ind-movie:hover,
+button:hover{
+  box-shadow: 2px 2px 2px 2px #3f414183;
+  border-radius: 3px;
+}
+
+#movie-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lilita One', cursive;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.ind-movie-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 60px;
+  color: black;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
+
+#movie-songs-title {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+#release-date {
+  font-size: 20px;
+}
+
+.movie-songs {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.side-by-side {
+  display: flex;
+}
+
+body {
+  background-color: #FAFAFA;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  background-color: #0d80ad;
+  color: white;
+  width: 100px;
+  font-family: 'Lilita One', cursive;
+  font-size: 20px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 3px;
 }

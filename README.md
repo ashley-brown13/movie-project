@@ -77,9 +77,19 @@
     Use this space to document your thought process. Reserve for this part at least 30 mins!
 
     How did you approach this challenge?
+
+    I approached the challenge with excitement. I knew I would want to add a Redux store as my first enhancement, and I knew I wanted to moderately style the pages.
+
     What did you find challenging?
+
     Did you get stuck?
+
+    Not for long. The below image issue confused me for a moment until I found the solution.
+
     Why did you do what you did?
     What did you learn or found interesting?
     Did you find a bug? How did you fix it?
+
+    The images were not showing up. For some reason the links are not working properly. I figured out that if you go to the link and select the "zoomed" version of the image, that URL will work, so I created an object that stores the working URLs according to their movie ID.
+
     At the end of the challenge, would you have done something different, if you could do it over?

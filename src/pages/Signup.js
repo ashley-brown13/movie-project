@@ -25,24 +25,24 @@ const SignUp = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h1>
-          Sign Up to <Link to="/">Emme Jr Challenge</Link>
+    <div id="signup-page">
+      <form onSubmit={handleSubmit} id="signup-form">
+        <Link id="signup-page-title-link" className="auth-page-link" to="/">The Movie Depot</Link>
+        <h1 className="auth-page-title">
+          Sign Up
         </h1>
-        <p>Fill in the form below to create an account.</p>
+        <p className="auth-directions">Fill in the form below to create an account.</p>
         <div>
-          <input placeholder="Email" name={constants.auth.email} type="email" onChange={handleChange} value={email}/>
+          <input className="auth-page-input" placeholder="Email" name={constants.auth.email} type="email" onChange={handleChange} value={email}/>
         </div>
         <div>
-          <input placeholder="Password" name={constants.auth.password} onChange={handleChange} value={password} type="password"/>
+          <input className="auth-page-input" placeholder="Password" name={constants.auth.password} onChange={handleChange} value={password} type="password"/>
         </div>
         <div>
           {error && <p>{error}</p>}
           <button type="submit">Sign up</button>
         </div>
-        <hr/>
-        <p>Already have an account? <Link to={constants.routes.login}>Login</Link></p>
+        <p>Already have an account? <Link className="auth-page-link" to={constants.routes.login}>Login</Link></p>
       </form>
     </div>
   )
